@@ -28,7 +28,7 @@ export default function Home() {
     <div className="site-shell">
       <header className="topbar">
         <Link href="/" className="brand" aria-label="COBOL Campus home"><span className="brand-mark">C</span><span>COBOL<span className="brand-light">.campus</span></span></Link>
-        <nav aria-label="Main navigation"><a href="#learn">Learn</a><a href="#reference">Reference</a><a href="#projects">Projects</a></nav>
+        <nav aria-label="Main navigation"><Link href="/course">Course</Link><a href="#reference">Reference</a><Link href="/tools">Tools</Link><a href="#projects">Projects</a></nav>
         <Link href="/learn/getting-started" className="nav-cta">Start learning <span>↗</span></Link>
       </header>
 
@@ -39,7 +39,7 @@ export default function Home() {
             <h1>The language that<br /><em>runs the world.</em></h1>
             <p>Master COBOL from your first <code>DISPLAY</code> to production-grade banking systems. Clear lessons, executable examples, and the reference you&apos;ll keep open at work.</p>
             <div className="hero-actions"><Link href="/learn/getting-started" className="primary-button">Begin the course <span>→</span></Link><a href="#projects" className="text-button">Explore examples <span>↓</span></a></div>
-            <div className="proof"><span><b>67</b> lessons</span><i /><span><b>120+</b> examples</span><i /><span><b>Free</b> forever</span></div>
+            <div className="proof"><span><b>22</b> deep lessons</span><i /><span><b>10</b> applications</span><i /><span><b>6</b> developer tools</span></div>
           </div>
           <div className="terminal-wrap" aria-label="COBOL Hello World example">
             <div className="terminal-shadow" />
@@ -66,7 +66,7 @@ export default function Home() {
 
         <section className="section projects" id="projects">
           <div className="section-heading"><div><span className="kicker">03 / Learn by shipping</span><h2>Real programs,<br />not toy snippets.</h2></div><p>Study complete, annotated applications modeled after the systems COBOL developers maintain every day.</p></div>
-          <div className="project-grid">{samples.map((sample, i) => <Link href={`/projects/${sample.slug}`} className="project-card" key={sample.slug}><div className="project-visual"><span>0{i + 1}</span><div className={`mini-ui mini-${i}`}><i /><i /><i /><b>{i === 0 ? "$ 4,218.60" : i === 1 ? "BALANCED" : "INV-1042"}</b></div></div><div className="project-body"><div><small>{sample.type}</small><small>{sample.level}</small></div><h3>{sample.title}</h3><p>{sample.desc}</p><span>View project <b>→</b></span></div></Link>)}</div>
+          <div className="project-grid">{samples.map((sample, i) => <Link href={`/projects/${sample.slug}`} className="project-card" key={sample.slug}><div className="project-visual"><span>0{i + 1}</span><div className={`mini-ui mini-${i}`}><i /><i /><i /><b>{i === 0 ? "$ 4,218.60" : i === 1 ? "BALANCED" : "INV-1042"}</b></div></div><div className="project-body"><div><small>{sample.type}</small><small>{sample.level}</small></div><h3>{sample.title}</h3><p>{sample.desc}</p><span>View project <b>→</b></span></div></Link>)}</div><div className="all-projects"><Link href="/projects">Browse all 10 applications →</Link><Link href="/tools">Open developer workbench →</Link></div>
         </section>
 
         <section className="cta-band"><span className="kicker">READY WHEN YOU ARE</span><h2>Your mainframe journey<br />starts with one line.</h2><Link href="/learn/getting-started">Start lesson 01 <span>→</span></Link></section>
