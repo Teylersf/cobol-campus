@@ -28,7 +28,7 @@ export default function Home() {
     <div className="site-shell">
       <header className="topbar">
         <Link href="/" className="brand" aria-label="COBOL Campus home"><span className="brand-mark">C</span><span>COBOL<span className="brand-light">.campus</span></span></Link>
-        <nav aria-label="Main navigation"><Link href="/course">Course</Link><Link href="/simulators">Simulators</Link><Link href="/tools">Tools</Link><Link href="/frontier">Frontier</Link></nav>
+        <nav aria-label="Main navigation"><Link href="/course">Course</Link><Link href="/simulators">Simulators</Link><Link href="/airline-system">Airline Core</Link><Link href="/frontier">Frontier</Link></nav>
         <Link href="/learn/getting-started" className="nav-cta">Start learning <span>↗</span></Link>
       </header>
 
@@ -71,7 +71,7 @@ export default function Home() {
 
         <section className="cta-band"><span className="kicker">READY WHEN YOU ARE</span><h2>Your mainframe journey<br />starts with one line.</h2><Link href="/learn/getting-started">Start lesson 01 <span>→</span></Link></section>
       </main>
-      <footer><Link href="/" className="brand"><span className="brand-mark">C</span><span>COBOL.campus</span></Link><p>Built for the next generation of mainframe engineers.</p><div><a href="#learn">Curriculum</a><a href="#reference">Reference</a><a href="#projects">Projects</a></div><small>© 2026 COBOL Campus</small></footer>
+      <footer><Link href="/" className="brand"><span className="brand-mark">C</span><span>COBOL.campus</span></Link><p>Built for the next generation of mainframe engineers.</p><div><a href="#learn">Curriculum</a><Link href="/simulators">Simulators</Link><Link href="/airline-system">Airline Core</Link><Link href="/frontier">Frontier</Link></div><small>© 2026 COBOL Campus</small></footer>
     </div>
   );
 }
