@@ -28,7 +28,7 @@ export default function Home() {
     <div className="site-shell">
       <header className="topbar">
         <Link href="/" className="brand" aria-label="COBOL Campus home"><span className="brand-mark">C</span><span>COBOL<span className="brand-light">.campus</span></span></Link>
-        <nav aria-label="Main navigation"><Link href="/course">Course</Link><a href="#reference">Reference</a><Link href="/tools">Tools</Link><a href="#projects">Projects</a></nav>
+        <nav aria-label="Main navigation"><Link href="/course">Course</Link><a href="#reference">Reference</a><Link href="/tools">Tools</Link><Link href="/frontier">Frontier</Link></nav>
         <Link href="/learn/getting-started" className="nav-cta">Start learning <span>↗</span></Link>
       </header>
 
